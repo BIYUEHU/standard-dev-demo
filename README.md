@@ -3,6 +3,7 @@
 **Last update: 2023-8-19**
 
 > Main Stack: pnpm, eslint, prettier, commitizen, husky, commitlint
+
 > Secondary Stack:Typescript, git, lint-staged, standard-version
 
 ## 1.Initialize project and use pnpm
@@ -492,23 +493,69 @@ pnpm install standard-version -D
 }
 ```
 
-> .versionrc.js
+> .versionrc
 
 ```json
-module.exports = {
-	types: [
-		{ type: 'feat', section: '✨ Features' },
-		{ type: 'fix', section: '🐛 Bug Fixes' },
-		{ type: 'docs', section: '✏️ Documentation' },
-		{ type: 'style', section: '💄 Styles' },
-		{ type: 'refactor', section: '♻️ Code Refactoring' },
-		{ type: 'perf', section: '⚡ Performance Improvements' },
-		{ type: 'test', section: '✅ Tests' },
-		{ type: 'revert', section: '⏪ Revert', hidden: true },
-		{ type: 'build', section: '📦‍ Build System' },
-		{ type: 'chore', section: '🚀 Chore' },
-		{ type: 'ci', section: '👷 Continuous Integration' },
-	],
-};
+{
+	"types": [
+		{ "type": "feat", "section": "✨ Features" },
+		{ "type": "fix", "section": "🐛 Bug Fixes" },
+		{ "type": "docs", "section": "✏️ Documentation" },
+		{ "type": "style", "section": "💄 Styles" },
+		{ "type": "refactor", "section": "♻️ Code Refactoring" },
+		{ "type": "perf", "section": "⚡ Performance Improvements" },
+		{ "type": "test", "section": "✅ Tests" },
+		{ "type": "revert", "section": "⏪ Revert", "hidden": true },
+		{ "type": "build", "section": "📦‍ Build System" },
+		{ "type": "chore", "section": "🚀 Chore" },
+		{ "type": "ci", "section": "👷 Continuous Integration" }
+	]
+}
 ```
 
+Try a few!
+
+```shel
+pnpm run release
+```
+
+## 5.Publish to Npm Package
+
+Mange npm's sources:
+
+```shell
+npm install nrm -g
+nrm ls
+# View all sources list
+nrm use npm
+# Checkout some source
+```
+
+> package.json
+
+Added some information for your `package.json`
+
+```json
+{
+    /* ... */
+	"bugs": {
+		"url": "https://github.com/biyuehu/standard-dev-demo/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:BIYUEHU/standard-dev-demo.git"
+	},
+	"homepage": "https://github.com/biyuehu/standard-dev-demo#readme",
+    /* ... */
+}
+```
+
+When Everything is ready:
+
+```shell
+npm publish
+```
+
+View your package: [https://www.npmjs.com/package/standard-dev-demo](https://www.npmjs.com/package/standard-dev-demo)
+
+>  Good!You can develop to a standard project,Now!

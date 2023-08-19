@@ -1,7 +1,7 @@
 {
 	"name": "standard-dev-demo",
 	"version": "1.0.4",
-	"description": "> Stack: pnpm, eslint, prettier, commitizen, husky, commitlint",
+	"description": "Stack: pnpm, eslint, prettier, commitizen, husky, commitlint",
 	"main": "index.ts",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,7 @@
 		"release": "standard-version"
 	},
 	"keywords": [],
-	"author": "Hotaru",
+	"author": "hotaru",
 	"license": "ISC",
 	"devDependencies": {
 		"@commitlint/cli": "12.1.4",
