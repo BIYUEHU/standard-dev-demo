@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/BIYUEHU/commitizen-demo/compare/v1.1.0...v1.1.1) (2023-08-19)
+
+
+### 🚀 Chore
+
+* a few change ([bc777b2](https://github.com/BIYUEHU/commitizen-demo/commit/bc777b2ec60fca3d5953c984cf3d67ef86b8341d))
+* added package ([99cb20f](https://github.com/BIYUEHU/commitizen-demo/commit/99cb20f56c176c02d5c47d892b4f3c9a8aee6ba3))
+
 ## [1.1.0](https://github.com/BIYUEHU/commitizen-demo/compare/v1.0.4...v1.1.0) (2023-08-19)
 
 
