@@ -3,7 +3,7 @@
 **Last update: 2023-8-19**
 
 > Main Stack: pnpm, eslint, prettier, commitizen, husky, commitlint
-> Secondary Stack:Typescript, git, lint-staged
+> Secondary Stack:Typescript, git, lint-staged, standard-version
 
 ## 1.Initialize project and use pnpm
 *Initialize project*:
@@ -404,7 +404,7 @@ Install Commitlint:
 
 ```shell
 pnpm install @commitlint/config-conventional @commitlint/cli@12.1.4 -D
-npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
+pnpx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 ```
 
 > .commitlintrc
@@ -470,3 +470,25 @@ pnpm install lint-staged -D
 ```shell
 pnpx husky add .husky/pre-commit "npx lint-staged"
 ```
+
+## 4.Auto create CHANGELOG.md and release
+
+Install standard-version
+
+```shell
+pnpm install standard-version -D
+```
+
+> package.json
+
+```json
+{
+    /* ... */
+    "scripts": {
+        /* ... */
+		"release": "standard-version"
+    }
+    /* ... */
+}
+```
+
