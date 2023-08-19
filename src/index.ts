@@ -3,4 +3,4 @@ function test(a: string) {
 		a: a ? 1 : 3,
 	};
 }
-test('a');
+test('ba');
