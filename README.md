@@ -372,7 +372,7 @@ git cz
 ```
 
 
-Install Husky(Method.1):
+Install Husky:
 
 ```shell
 pnpm install husky -D
@@ -393,11 +393,6 @@ pnpm install husky -D
 
 ```shell
 pnpm run prepare
-```
-
-Install Husky(Method.2):
-
-```shell
 pnpx husky install
 ```
 
@@ -529,6 +524,21 @@ nrm ls
 # View all sources list
 nrm use npm
 # Checkout some source
+npm login
+# Login your account
+```
+
+> .npmignore
+```ini
+node_modules
+dist
+logs
+*.log
+
+.vscode/*
+.vs/*
+!.vscode/extensions.json
+.idea
 ```
 
 > package.json
