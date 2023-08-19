@@ -101,6 +101,7 @@ tsc --init
 ```shell
 git init
 git remote add origin git@github.com:BIYUEHU/standard-dev-demo.git
+git push --set-upstream origin master
 ```
 
 >  Create `.gitignore`
@@ -563,6 +564,10 @@ Added some information for your `package.json`
 When Everything is ready:
 
 ```shell
+git add .
+git commit -m 'type: description'
+pnpm run release
+git push
 npm publish
 ```
 
