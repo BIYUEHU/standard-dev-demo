@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/BIYUEHU/commitizen-demo/compare/v1.0.4...v1.1.0) (2023-08-19)
+
+
+### ✨ Features
+
+* publish to npm ([65fee91](https://github.com/BIYUEHU/commitizen-demo/commit/65fee91943d3a63b8425ee1900a788970e4b336b))
+
 ### [1.0.4](https://github.com/BIYUEHU/commitizen-demo/compare/v1.0.2...v1.0.4) (2023-08-19)
 
 
