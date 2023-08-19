@@ -1,0 +1,32 @@
+{
+	"name": "standard-dev-demo",
+	"version": "1.0.0",
+	"description": "> Stack: pnpm, eslint, prettier, commitizen, husky, commitlint",
+	"main": "index.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint": "eslint \"src/**/*.{js,vue,ts}\" --fix",
+		"prettier": "prettier --config .prettierrc \"src/**/*.{vue,js,ts}\" --write",
+		"prepare": "husky install"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^6.4.0",
+		"@typescript-eslint/parser": "^6.4.0",
+		"cz-conventional-changelog": "^3.3.0",
+		"eslint": "^8.47.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-plugin-import": "^2.28.0",
+		"eslint-plugin-prettier": "^5.0.0",
+		"husky": "^8.0.3",
+		"prettier": "^3.0.2"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	}
+}

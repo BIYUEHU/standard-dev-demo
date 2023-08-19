@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"sources": [
+		"file.js"
+	],
+	"names": [
+		"name",
+		"console",
+		"log"
+	],
+	"mappings": "AAAA;AACA;AACA"
+}
