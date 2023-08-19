@@ -1,9 +1,9 @@
 # standard-dev-demo
 
-**Last update: 2023-8-16**
+**Last update: 2023-8-19**
 
 > Main Stack: pnpm, eslint, prettier, commitizen, husky, commitlint
-> Secondary Stack:Typescript, git
+> Secondary Stack:Typescript, git, lint-staged
 
 ## 1.Initialize project and use pnpm
 *Initialize project*:
@@ -453,7 +453,7 @@ npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 | chore    | Other changes that don't modify src or test files            |
 | revert   | Reverts a previous commit                                    |
 
-Use list-staged:
+Use lint-staged:
 
 ```shell
 pnpm install lint-staged -D
@@ -470,4 +470,3 @@ pnpm install lint-staged -D
 ```shell
 pnpx husky add .husky/pre-commit "npx lint-staged"
 ```
-
