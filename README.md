@@ -397,7 +397,7 @@ pnpm run prepare
 Install Husky(Method.2):
 
 ```shell
-npx husky install
+pnpx husky install
 ```
 
 Install Commitlint:
@@ -459,21 +459,15 @@ Use list-staged:
 pnpm install lint-staged -D
 ```
 
-> package.json
+> .lintstagedrc
 
 ```json
 {
-    /* ... */,
-	"lint-staged": {
-		"*.{js,jsx,vue,ts,tsx}": [
-			"npm run lint",
-			"npm run prettier"
-		]
-	}
+	"*.{js,jsx,vue,ts,tsx}": ["npm run lint", "npm run prettier", "git add ."]
 }
 ```
 
 ```shell
-npx husky add .husky/pre-commit "npx lint-staged"
+pnpx husky add .husky/pre-commit "npx lint-staged"
 ```
 
