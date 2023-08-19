@@ -1,6 +1,6 @@
 {
 	"name": "standard-dev-demo",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"description": "Stack: pnpm, eslint, prettier, commitizen, husky, commitlint",
 	"main": "index.ts",
 	"scripts": {
