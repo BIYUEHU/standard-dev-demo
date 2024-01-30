@@ -1,9 +1,12 @@
 node_modules
 dist
-logs
-*.log
+lib
+.husky/_
 
 .vscode/*
 .vs/*
 !.vscode/extensions.json
-.idea
+
+*.tgz
+tsconfig.tsbuildinfo
+*.log

@@ -1,7 +1,7 @@
 {
 	"name": "standard-dev-demo",
-	"version": "1.1.2",
-	"description": "Stack: pnpm, eslint, prettier, commitizen, husky, commitlint",
+	"version": "1.2.0",
+	"description": "Stack: pnpm, eslint, prettier, husky, commitlint",
 	"main": "index.ts",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
@@ -13,25 +13,38 @@
 	"keywords": [],
 	"author": "hotaru",
 	"license": "GPL-3.0",
+	"files": [
+		"dist",
+		"LICENSE",
+		"README.md"
+	],
+	"bugs": {
+		"url": "https://github.com/biyuehu/standard-dev-demo/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/biyuehu/standard-dev-demo.git"
+	},
+	"homepage": "https://github.com/biyuehu/standard-dev-demo",
 	"devDependencies": {
 		"@commitlint/cli": "12.1.4",
-		"@commitlint/config-conventional": "^17.7.0",
+		"conventional-changelog-cli": "^4.1.0",
 		"@typescript-eslint/eslint-plugin": "^6.4.0",
 		"@typescript-eslint/parser": "^6.4.0",
-		"cz-conventional-changelog": "^3.3.0",
+		"eslint": "^8.47.0",
 		"eslint-config-airbnb-base": "^15.0.0",
 		"eslint-config-prettier": "^9.0.0",
-		"eslint-import-resolver-alias": "^1.1.2",
-		"eslint-plugin-import": "^2.28.0",
 		"eslint-plugin-prettier": "^5.0.0",
 		"husky": "^8.0.3",
 		"lint-staged": "^14.0.0",
 		"prettier": "^3.0.2",
 		"standard-version": "^9.5.0"
 	},
-	"config": {
-		"commitizen": {
-			"path": "./node_modules/cz-conventional-changelog"
-		}
+	"lint-staged": {
+		"*.{js,jsx,vue,ts,tsx}": [
+			"npm run lint",
+			"npm run prettier",
+			"git add ."
+		]
 	}
 }
