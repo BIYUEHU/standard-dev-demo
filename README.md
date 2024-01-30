@@ -314,11 +314,8 @@ Mange npm's sources:
 ```bash
 npm install nrm -g
 nrm ls
-# View all sources list
 nrm use npm
-# Checkout some source
 npm login
-# Login your account
 ```
 
 > package.json
