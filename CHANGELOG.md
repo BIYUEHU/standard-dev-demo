@@ -2,29 +2,7 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [1.1.1](https://github.com/biyuehu/standard-dev-demo/compare/v1.1.2...v1.1.1) (2024-01-30)
-
-## 1.1.0 (2024-01-30)
-
-* chore: update ([7dab102](https://github.com/biyuehu/standard-dev-demo/commit/7dab102))
-* Update LICENSE ([df85ff6](https://github.com/biyuehu/standard-dev-demo/commit/df85ff6))
-
-
-
-## <small>1.1.2 (2023-08-19)</small>
-
-* chore: added license ([968ecf3](https://github.com/biyuehu/standard-dev-demo/commit/968ecf3))
-* chore(release): 1.1.2 ([2a5cf08](https://github.com/biyuehu/standard-dev-demo/commit/2a5cf08))
-
-
-
-## <small>1.1.1 (2023-08-19)</small>
-
-* chore: a few change ([bc777b2](https://github.com/biyuehu/standard-dev-demo/commit/bc777b2))
-* chore: added package ([99cb20f](https://github.com/biyuehu/standard-dev-demo/commit/99cb20f))
-* chore(release): 1.1.1 ([ad5f729](https://github.com/biyuehu/standard-dev-demo/commit/ad5f729))
-
-
+### [1.1.3](https://github.com/biyuehu/standard-dev-demo/compare/v1.1.2...v1.1.3) (2024-01-30)
 
 ## 1.1.0 (2023-08-19)
 
