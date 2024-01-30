@@ -8,17 +8,18 @@
 
 ## 1.Initialize project and use pnpm
 
-*Initialize project*:
+_Initialize project_:
 
 ```bash
 mkdir standard-dev-demo
 cd ./standard-dev-demo
 npm init -y
 ```
+
 > For Vue, React ,NestJs and other projecst: use their own cli tools
 > Such as `Vue-cli(Vue-cli-ui)`, `Vite`...
 
-*Open it(Vscode):*
+_Open it(Vscode):_
 
 ```bash
 code .
@@ -33,50 +34,48 @@ npm install pnpm -g
 ### why is pnpm?
 
 - Fast speed - It's fast than `npm` and `yarn`
-- Small footprint - Using `hard linking` to link nodes_ modules resource
+- Small footprint - Using `hard linking` to link nodes\_ modules resource
 - Compatible with NPM - PNPM is fully compatible with the ecosystem of NPM and can be easily migrated.
 
-*Install Typescript:*
+_Install Typescript:_
 
 ```bash
 npm install typescript -g
 tsc --init
 ```
 
->Example tsconfig.json
+> Example tsconfig.json
 
 ```json
 {
-	"extends": "./tsconfig.node.json",
-	"compilerOptions": {
-		"outDir": "dist",
-	},
-	"include": [
-		"src/**/*.ts"
-	]
+  "extends": "./tsconfig.node.json",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "include": ["src/**/*.ts"]
 }
 ```
 
 ```json
 {
-	"compilerOptions": {
-		"module": "NodeNext",
-		"moduleResolution": "NodeNext",
-		"target": "ESNext",
-		"strict": true,
-		"declaration": true,
-		"experimentalDecorators": true,
-		"composite": true,
-		"incremental": true,
-		"outDir": "lib",
-		"rootDir": "src"
-	},
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ESNext",
+    "strict": true,
+    "declaration": true,
+    "experimentalDecorators": true,
+    "composite": true,
+    "incremental": true,
+    "outDir": "lib",
+    "rootDir": "src"
+  }
 }
 ```
 
-*Initialize Git:*
+_Initialize Git:_
 
->  Create a Github repository: [https://github.com/new](https://github.com/new)
+> Create a Github repository: [https://github.com/new](https://github.com/new)
 
 ```bash
 git init
@@ -84,7 +83,7 @@ git remote add origin git@github.com:BIYUEHU/standard-dev-demo.git
 git push -u origin master
 ```
 
->  Create `.gitignore`
+> Create `.gitignore`
 
 ```ini
 node_modules
@@ -120,25 +119,25 @@ pnpm install eslint-config-prettier eslint-config-airbnb-base eslint-plugin-pret
 # eslint-plugin-vue: ESLint's support for Vue project
 ```
 
-*Install their editor plugins(Vscode):*
+_Install their editor plugins(Vscode):_
 
-> Search in the expand store: `ESLint` `Prettier - Code formatter` 
+> Search in the expand store: `ESLint` `Prettier - Code formatter`
 > Optional plugins: `ESLint Chinese Rules`(For Chinese) `Prettier ESLint`
 
 > Change save setting: Settings(`ctrl + .`) -> Search: save -> √ Editor: Format On Save
 
 > Right click in the editing area -> Using Format Document -> Configure default formatted documents
 
-*Auto fix problems that is can  by ESLint on save:*
+_Auto fix problems that is can by ESLint on save:_
 
 ```json
 /*
-* VSCode Settings JSON File
-*/
+ * VSCode Settings JSON File
+ */
 {
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  },
+  }
 }
 ```
 
@@ -146,31 +145,24 @@ pnpm install eslint-config-prettier eslint-config-airbnb-base eslint-plugin-pret
 
 ```json
 {
-	"root": true,
-	"extends": [
-		"airbnb-base",
-		"prettier"
-	],
-	"parser": "@typescript-eslint/parser",
-	"plugins": [
-		"@typescript-eslint"
-	],
-	"rules": {
-		// "@typescript-eslint/no-explicit-any": 0,
-		// "@typescript-eslint/no-namespace": 0,
-		// "no-console": 0,
-		// "space-before-function-paren": 0,
-		/* typescript need */
-		"import/no-unresolved": 0,
-		"import/extensions": 0,
-		"no-use-before-define": 0,
-		"no-unused-vars": 0,
-		"no-shadow": 0,
-		"no-redeclare": 0
-	},
-	"ignorePatterns": [
-		"*.js"
-	]
+  "root": true,
+  "extends": ["airbnb-base", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    // "@typescript-eslint/no-explicit-any": 0,
+    // "@typescript-eslint/no-namespace": 0,
+    // "no-console": 0,
+    // "space-before-function-paren": 0,
+    /* typescript need */
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
+    "no-use-before-define": 0,
+    "no-unused-vars": 0,
+    "no-shadow": 0,
+    "no-redeclare": 0
+  },
+  "ignorePatterns": ["*.js"]
 }
 ```
 
@@ -178,9 +170,9 @@ pnpm install eslint-config-prettier eslint-config-airbnb-base eslint-plugin-pret
 
 ```json
 {
-	"singleQuote": true,
-	"printWidth": 120,
-	"trailingComma": "none"
+  "singleQuote": true,
+  "printWidth": 120,
+  "trailingComma": "none"
 }
 ```
 
@@ -188,12 +180,12 @@ pnpm install eslint-config-prettier eslint-config-airbnb-base eslint-plugin-pret
 
 ```json
 {
+  // ...
+  "scripts": {
     // ...
-    "scripts": {
-        // ...
-		"lint": "eslint \"src/**/*.{js,vue,ts}\" --fix",
-		"prettier": "prettier --config .prettierrc \"src/**/*.{vue,js,ts}\" --write"
-    }
+    "lint": "eslint \"src/*.{ts,tsx}\" --fix",
+    "format": "prettier --config .prettierrc \"src/*.ts\" --write"
+  }
 }
 ```
 
@@ -217,23 +209,23 @@ pnpm install husky -D
 
 ```json
 {
+  // ...
+  "scripts": {
     // ...
-    "scripts": {
-        // ...
-    	"prepare": "husky install"
-    }
+    "prepare": "husky install"
+  }
 }
 ```
 
 ```bash
-pnpm run prepare
+pnpm prepare
 pnpx husky install
 ```
 
 Install Commitlint:
 
 ```bash
-pnpm install @commitlint/config-conventional @commitlint/cli@12.1.4 -D
+pnpm install @commitlint/config-conventional @commitlint/cli -D
 pnpx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 ```
 
@@ -241,47 +233,31 @@ pnpx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 
 ```json
 {
-	"extends": [
-		"@commitlint/config-conventional"
-	],
-	"rules": {
-		"type-enum": [
-			2,
-			"always",
-			[
-				"feat",
-				"fix",
-				"docs",
-				"style",
-				"refactor",
-				"perf",
-				"test",
-				"build",
-				"ci",
-				"chore",
-				"revert"
-			]
-		],
-		"subject-case": [
-			0
-		]
-	}
+  "extends": ["@commitlint/config-conventional"],
+  "rules": {
+    "type-enum": [
+      2,
+      "always",
+      ["feat", "fix", "docs", "style", "refactor", "perf", "test", "build", "ci", "chore", "revert"]
+    ],
+    "subject-case": [0]
+  }
 }
 ```
 
-| Type     | Description                                                  |
-| -------- | ------------------------------------------------------------ |
-| feat     | A new feature                                                |
-| fix      | A bug fix                                                    |
-| docs     | Documentation only changes                                   |
-| style    | Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc) |
-| refactor | A code change that neither fixes a bug nor adds a feature    |
-| perf     | A code change that improves performance                      |
-| test     | Adding missing tests or correcting existing tests            |
-| build    | Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm) |
+| Type     | Description                                                                                                 |
+| -------- | ----------------------------------------------------------------------------------------------------------- |
+| feat     | A new feature                                                                                               |
+| fix      | A bug fix                                                                                                   |
+| docs     | Documentation only changes                                                                                  |
+| style    | Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)      |
+| refactor | A code change that neither fixes a bug nor adds a feature                                                   |
+| perf     | A code change that improves performance                                                                     |
+| test     | Adding missing tests or correcting existing tests                                                           |
+| build    | Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)         |
 | ci       | Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs) |
-| chore    | Other changes that don't modify src or test files            |
-| revert   | Reverts a previous commit                                    |
+| chore    | Other changes that don't modify src or test files                                                           |
+| revert   | Reverts a previous commit                                                                                   |
 
 Use lint-staged:
 
@@ -293,14 +269,10 @@ pnpm install lint-staged -D
 
 ```json
 {
-	// ...
-	"lint-staged": {
-		"*.{js,jsx,vue,ts,tsx}": [
-			"npm run lint",
-			"npm run prettier",
-			"git add ."
-		]
-	}
+  // ...
+  "lint-staged": {
+    "*.{js,jsx,vue,ts}": ["pnpm lint", "pnpm format", "git add ."]
+  }
 }
 ```
 
@@ -320,18 +292,19 @@ pnpm install standard-version -D
 
 ```json
 {
+  // ...
+  "scripts": {
     // ...
-    "scripts": {
-        // ...
-		"release": "standard-version"
-    }
+    "release": "pnpm release:changelog && standard-version",
+    "release:changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+  }
 }
 ```
 
 Try a few!
 
 ```bash
-pnpm run release
+pnpm release
 ```
 
 ## 5.Publish to Npm Package
@@ -354,15 +327,15 @@ Added some information for your `package.json`
 
 ```json
 {
-    // ...
-	"bugs": {
-		"url": "https://github.com/biyuehu/standard-dev-demo/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/biyuehu/standard-dev-demo.git"
-	},
-	"homepage": "https://github.com/biyuehu/standard-dev-demo"
+  // ...
+  "bugs": {
+    "url": "https://github.com/biyuehu/standard-dev-demo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biyuehu/standard-dev-demo.git"
+  },
+  "homepage": "https://github.com/biyuehu/standard-dev-demo"
 }
 ```
 
@@ -371,11 +344,11 @@ When Everything is ready:
 ```bash
 git add .
 git commit -m 'chore: update'
-pnpm run release
+pnpm release
 git push
-npm publish
+pnpm publish
 ```
 
 View your package: [https://www.npmjs.com/package/standard-dev-demo](https://www.npmjs.com/package/standard-dev-demo)
 
->  Good!You can develop to a standard project,Now!
+> Good!You can develop to a standard project,Now!
