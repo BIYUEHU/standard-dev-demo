@@ -1,14 +1,15 @@
 {
 	"name": "standard-dev-demo",
-	"version": "1.2.0",
+	"version": "1.1.1",
 	"description": "Stack: pnpm, eslint, prettier, husky, commitlint",
 	"main": "index.ts",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"lint": "eslint \"src/**/*.{js,vue,ts}\" --fix",
-		"prettier": "prettier --config .prettierrc \"src/**/*.{vue,js,ts}\" --write",
+		"lint": "eslint \"src/*.{ts,tsx}\" --fix",
+		"format": "prettier --config .prettierrc \"src/*.ts\" --write",
 		"prepare": "husky install",
-		"release": "standard-version"
+		"release": "pnpm release:changelog && standard-version",
+		"release:changelog": "pnpm exec conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
 	},
 	"keywords": [],
 	"author": "hotaru",
@@ -28,9 +29,10 @@
 	"homepage": "https://github.com/biyuehu/standard-dev-demo",
 	"devDependencies": {
 		"@commitlint/cli": "12.1.4",
-		"conventional-changelog-cli": "^4.1.0",
+		"@commitlint/config-conventional": "^18.6.0",
 		"@typescript-eslint/eslint-plugin": "^6.4.0",
 		"@typescript-eslint/parser": "^6.4.0",
+		"conventional-changelog-cli": "^4.1.0",
 		"eslint": "^8.47.0",
 		"eslint-config-airbnb-base": "^15.0.0",
 		"eslint-config-prettier": "^9.0.0",
@@ -41,9 +43,9 @@
 		"standard-version": "^9.5.0"
 	},
 	"lint-staged": {
-		"*.{js,jsx,vue,ts,tsx}": [
-			"npm run lint",
-			"npm run prettier",
+		"*.{js,jsx,vue,ts}": [
+			"pnpm lint",
+			"pnpm format",
 			"git add ."
 		]
 	}
