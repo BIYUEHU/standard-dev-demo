@@ -106,17 +106,7 @@ tsconfig.tsbuildinfo
 > Prettier: A code-format tool and unified code style By `Editor Plugins`
 
 ```bash
-pnpm install eslint-config-prettier eslint-config-airbnb-base eslint-plugin-prettier eslint prettier -D
-
-# eslint-config-prettier: ESLint with Prettier
-# eslint-config-airbnb-base: ESLint's support for airbnb
-# eslint-import-resolver-alias: ESLint's support for import alias
-# eslint-plugin-import: Organize your import statement
-# eslint-plugin-prettier: ESLint's support for Prettier
-# prettier: Prettier's core repository
-
-# Optional:
-# eslint-plugin-vue: ESLint's support for Vue project
+pnpm install eslint-config-prettier eslint-config-airbnb-base eslint-config-typescript eslint prettier -D
 ```
 
 _Install their editor plugins(Vscode):_
@@ -146,15 +136,14 @@ _Auto fix problems that is can by ESLint on save:_
 ```json
 {
   "root": true,
-  "extends": ["airbnb-base", "prettier"],
+  "env": {
+    "es2024": true
+  },
+  "extends": ["airbnb-base", "prettier", "typescript"],
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint"],
   "rules": {
-    // "@typescript-eslint/no-explicit-any": 0,
-    // "@typescript-eslint/no-namespace": 0,
-    // "no-console": 0,
-    // "space-before-function-paren": 0,
-    /* typescript need */
+    "import/no-extraneous-dependencies": 0,
     "import/no-unresolved": 0,
     "import/extensions": 0,
     "no-use-before-define": 0,
@@ -162,7 +151,7 @@ _Auto fix problems that is can by ESLint on save:_
     "no-shadow": 0,
     "no-redeclare": 0
   },
-  "ignorePatterns": ["*.js"]
+  "ignorePatterns": ["*.js", "*.d.ts"]
 }
 ```
 
