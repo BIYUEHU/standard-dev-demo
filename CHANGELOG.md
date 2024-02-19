@@ -1,6 +1,7 @@
 ## <small>1.1.5 (2024-02-19)</small>
 
 * chore: update config ([3cc563b](https://github.com/biyuehu/standard-dev-demo/commit/3cc563b))
+* chore(release): 1.1.5 ([c957f69](https://github.com/biyuehu/standard-dev-demo/commit/c957f69))
 
 
 
