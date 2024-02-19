@@ -1,5 +1,12 @@
+## <small>1.1.5 (2024-02-19)</small>
+
+* chore: update config ([3cc563b](https://github.com/biyuehu/standard-dev-demo/commit/3cc563b))
+
+
+
 ## <small>1.1.4 (2024-02-19)</small>
 
+* chore: release v1.1.4 ([9250fd2](https://github.com/biyuehu/standard-dev-demo/commit/9250fd2))
 * chore: update gitattributes ([4792a84](https://github.com/biyuehu/standard-dev-demo/commit/4792a84))
 * chore: update gitattributes ([01bec40](https://github.com/biyuehu/standard-dev-demo/commit/01bec40))
 * chore: update packages ([e4e99da](https://github.com/biyuehu/standard-dev-demo/commit/e4e99da))
