@@ -1,8 +1,34 @@
-# Changelog
+## <small>1.1.4 (2024-02-19)</small>
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+* chore: update gitattributes ([4792a84](https://github.com/biyuehu/standard-dev-demo/commit/4792a84))
+* chore: update gitattributes ([01bec40](https://github.com/biyuehu/standard-dev-demo/commit/01bec40))
+* chore: update packages ([e4e99da](https://github.com/biyuehu/standard-dev-demo/commit/e4e99da))
 
-### [1.1.3](https://github.com/biyuehu/standard-dev-demo/compare/v1.1.2...v1.1.3) (2024-01-30)
+
+
+## <small>1.1.3 (2024-01-30)</small>
+
+* chore: update ([7dab102](https://github.com/biyuehu/standard-dev-demo/commit/7dab102))
+* chore(release): 1.1.1 ([bf04eae](https://github.com/biyuehu/standard-dev-demo/commit/bf04eae))
+* chore(release): 1.1.3 ([1c546ea](https://github.com/biyuehu/standard-dev-demo/commit/1c546ea))
+* Update LICENSE ([df85ff6](https://github.com/biyuehu/standard-dev-demo/commit/df85ff6))
+
+
+
+## <small>1.1.2 (2023-08-19)</small>
+
+* chore: added license ([968ecf3](https://github.com/biyuehu/standard-dev-demo/commit/968ecf3))
+* chore(release): 1.1.2 ([2a5cf08](https://github.com/biyuehu/standard-dev-demo/commit/2a5cf08))
+
+
+
+## <small>1.1.1 (2023-08-19)</small>
+
+* chore: a few change ([bc777b2](https://github.com/biyuehu/standard-dev-demo/commit/bc777b2))
+* chore: added package ([99cb20f](https://github.com/biyuehu/standard-dev-demo/commit/99cb20f))
+* chore(release): 1.1.1 ([ad5f729](https://github.com/biyuehu/standard-dev-demo/commit/ad5f729))
+
+
 
 ## 1.1.0 (2023-08-19)
 
@@ -33,3 +59,6 @@ All notable changes to this project will be documented in this file. See [standa
 * chore(release): 1.0.1 ([3d571e8](https://github.com/biyuehu/standard-dev-demo/commit/3d571e8))
 * docs: update README.md ([88e5539](https://github.com/biyuehu/standard-dev-demo/commit/88e5539))
 * build: the first build ([c2012d2](https://github.com/biyuehu/standard-dev-demo/commit/c2012d2))
+
+
+
