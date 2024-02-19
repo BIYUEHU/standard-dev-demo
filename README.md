@@ -66,9 +66,7 @@ tsc --init
     "declaration": true,
     "experimentalDecorators": true,
     "composite": true,
-    "incremental": true,
-    "outDir": "lib",
-    "rootDir": "src"
+    "incremental": true
   }
 }
 ```
